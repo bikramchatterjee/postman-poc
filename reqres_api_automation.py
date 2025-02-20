@@ -33,7 +33,7 @@ for index, row in df.iterrows():
         user_id = user_data.get("id", "N/A")
         log_message = f" User {row['Name']} created successfully! ID: {user_id}"
     else:
-        log_message = f"❌ Failed to create {row['Name']}: {response.text}"
+        log_message = f" Failed to create {row['Name']}: {response.text}"
 
     print(log_message)
     log_response(log_message)
